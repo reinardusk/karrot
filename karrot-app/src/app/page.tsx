@@ -29,7 +29,7 @@ export default async function Home() {
           if (i < 4) {
             i++;
             return (
-              <Link href={"/products/" + product.slug}>
+              <Link href={"/products/" + product.slug} key={idx}>
                 <div
                   className="w-[18rem] border flex flex-col items-center text-xl gap-1 p-1 hover:opacity-80 transition duration-200"
                   key={idx}
