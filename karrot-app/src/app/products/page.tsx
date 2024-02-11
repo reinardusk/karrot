@@ -6,6 +6,7 @@ import ProductCard from "@/components/ProductCard";
 import SearchForm from "@/components/SearchForm";
 import { useSearchParams } from "next/navigation";
 import ClientErrorFlash from "@/components/ClientErrorFlash";
+export const dynamic = "force-dynamic";
 
 const Page = () => {
   const searchParams = useSearchParams();
