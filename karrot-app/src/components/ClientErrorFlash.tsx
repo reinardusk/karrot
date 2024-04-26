@@ -9,9 +9,11 @@ const ClientErrorFlash = () => {
   return (
     <>
       {errorMessage && (
-        <p className="animate-pulse text-red-700 text-xl p-2 bg-red-100 border border-red-700 mx-2 w-[300px]">
-          {errorMessage}
-        </p>
+        <>
+          <p className="animate-pulse text-red-700 text-xl p-2 bg-red-100 border border-red-700 mx-2 w-[300px]">
+            {errorMessage}
+          </p>
+        </>
       )}
     </>
   );

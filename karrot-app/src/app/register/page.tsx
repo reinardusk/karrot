@@ -13,18 +13,21 @@ const Page = () => {
       error?: string;
     };
 
-    const response = await fetch("process.env.NEXT_PUBLIC_BASE_URL/api/users", {
-      method: "POST",
-      body: JSON.stringify({
-        name: formData.get("name"),
-        username: formData.get("username"),
-        email: formData.get("email"),
-        password: formData.get("password"),
-      }),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
+    const response = await fetch(
+      process.env.NEXT_PUBLIC_BASE_URL + "/api/users",
+      {
+        method: "POST",
+        body: JSON.stringify({
+          name: formData.get("name"),
+          username: formData.get("username"),
+          email: formData.get("email"),
+          password: formData.get("password"),
+        }),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
 
     // console.log(response.ok, "<<<,response ok");
 

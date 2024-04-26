@@ -3,11 +3,17 @@ import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import type { Metadata } from "next";
 // import { Inter } from "next/font/google";
-import { Teko } from "next/font/google";
+import { Teko, Roboto } from "next/font/google";
 import "./globals.css";
 
 // const inter = Inter({ subsets: ["latin"] });
+
 const teko = Teko({ subsets: ["latin"] });
+const roboto = Roboto({
+  subsets: ["latin"],
+  weight: ["400", "500"],
+  variable: "--font-roboto",
+});
 
 export const metadata: Metadata = {
   title: "KAR-ROT SHOP",
